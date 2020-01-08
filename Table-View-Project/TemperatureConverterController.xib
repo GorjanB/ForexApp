@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TemperatureConverterController">
+            <connections>
+                <outlet property="celsiusTextField" destination="vGo-6b-rZo" id="MKc-8f-gab"/>
+                <outlet property="farenheitTextField" destination="AVo-UZ-UNL" id="s5O-Bp-U3b"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="UIControl">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Celsius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mwe-eJ-MmS">
+                    <rect key="frame" x="30" y="91" width="56" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AVo-UZ-UNL">
+                    <rect key="frame" x="122" y="215" width="243" height="30"/>
+                    <color key="backgroundColor" red="0.75294117647058822" green="0.75294117647058822" blue="0.76470588235294112" alpha="0.491912411971831" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="farenheitChangedEditing:" destination="-1" eventType="editingChanged" id="tqf-4F-xJA"/>
+                        <action selector="farenheitTextEntered:" destination="-1" eventType="editingDidEnd" id="koC-fg-KHT"/>
+                    </connections>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Farenheit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGW-mM-4dJ">
+                    <rect key="frame" x="30" y="216" width="72" height="28"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vGo-6b-rZo">
+                    <rect key="frame" x="122" y="86" width="243" height="30.5"/>
+                    <color key="backgroundColor" red="0.75298547739999999" green="0.75265610220000001" blue="0.76510506869999995" alpha="0.4886938820422535" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="celsiusChangedEditing:" destination="-1" eventType="editingChanged" id="wcY-Xi-qO3"/>
+                        <action selector="celsiusTextEntered:" destination="-1" eventType="editingDidEnd" id="Dju-nR-r7q"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="AVo-UZ-UNL" firstAttribute="top" secondItem="vGo-6b-rZo" secondAttribute="bottom" constant="98.5" id="1SO-HZ-cMt"/>
+                <constraint firstItem="vGo-6b-rZo" firstAttribute="centerY" secondItem="mwe-eJ-MmS" secondAttribute="centerY" id="8IZ-2z-otM"/>
+                <constraint firstItem="vGo-6b-rZo" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="66" id="Fnz-dl-lnn"/>
+                <constraint firstItem="AVo-UZ-UNL" firstAttribute="centerY" secondItem="mGW-mM-4dJ" secondAttribute="centerY" id="K9d-Ae-JZp"/>
+                <constraint firstItem="mGW-mM-4dJ" firstAttribute="leading" secondItem="mwe-eJ-MmS" secondAttribute="leading" id="O3c-ZW-k26"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="vGo-6b-rZo" secondAttribute="trailing" constant="10" id="TlK-1J-OQl"/>
+                <constraint firstItem="AVo-UZ-UNL" firstAttribute="leading" secondItem="mGW-mM-4dJ" secondAttribute="trailing" constant="20" id="apC-az-8Tb"/>
+                <constraint firstItem="vGo-6b-rZo" firstAttribute="leading" secondItem="AVo-UZ-UNL" secondAttribute="leading" id="hY7-f0-29i"/>
+                <constraint firstItem="mGW-mM-4dJ" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="oPb-gM-DPa"/>
+                <constraint firstItem="mGW-mM-4dJ" firstAttribute="top" secondItem="mwe-eJ-MmS" secondAttribute="bottom" constant="104.5" id="oZ9-oO-LF9"/>
+                <constraint firstItem="mwe-eJ-MmS" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="71" id="prb-7n-XYv"/>
+                <constraint firstItem="AVo-UZ-UNL" firstAttribute="top" secondItem="vGo-6b-rZo" secondAttribute="bottom" constant="98.5" id="s5K-HC-80G"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="AVo-UZ-UNL" secondAttribute="trailing" constant="10" id="zkD-Fu-kl8"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <connections>
+                <action selector="backgroundTapped:" destination="-1" eventType="touchUpInside" id="6Nn-mi-nl2"/>
+            </connections>
+            <point key="canvasLocation" x="572" y="-237"/>
+        </view>
+    </objects>
+</document>

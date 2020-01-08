@@ -1,0 +1,645 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		804D286422082F6E00848D7D /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 804D285D22082F6B00848D7D /* CoreText.framework */; };
+		804D286622082F6E00848D7D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 804D285F22082F6D00848D7D /* CoreGraphics.framework */; };
+		804D286722082F6E00848D7D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 804D286022082F6D00848D7D /* QuartzCore.framework */; };
+		804D286822082F6E00848D7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 804D286122082F6D00848D7D /* Foundation.framework */; };
+		804D286922082F6E00848D7D /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 804D286222082F6E00848D7D /* libxml2.dylib */; };
+		804D286A22082F6E00848D7D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 804D286322082F6E00848D7D /* UIKit.framework */; };
+		804D286B22082FA000848D7D /* SVGKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 804D285422082A5900848D7D /* SVGKit.framework */; };
+		804D286C22082FA000848D7D /* SVGKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 804D285422082A5900848D7D /* SVGKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		804D286E22082FB300848D7D /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 804D285E22082F6D00848D7D /* CocoaLumberjack.framework */; };
+		804D286F22082FB300848D7D /* CocoaLumberjack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 804D285E22082F6D00848D7D /* CocoaLumberjack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		804D28722208377700848D7D /* CurrencyList.m in Sources */ = {isa = PBXBuildFile; fileRef = 804D28712208377700848D7D /* CurrencyList.m */; };
+		804D28802208537000848D7D /* ForexController.m in Sources */ = {isa = PBXBuildFile; fileRef = 804D287E2208537000848D7D /* ForexController.m */; };
+		804D28812208537000848D7D /* ForexController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 804D287F2208537000848D7D /* ForexController.xib */; };
+		804E7D152212FE510007C7ED /* info.m in Sources */ = {isa = PBXBuildFile; fileRef = 804E7D142212FE510007C7ED /* info.m */; };
+		80D219FE2209BD2D00108172 /* CountryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D219FD2209BD2D00108172 /* CountryTableViewCell.m */; };
+		80D21A042209CEAB00108172 /* ImageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D21A032209CEAB00108172 /* ImageUtil.m */; };
+		80E5F3762202FF3000BAD678 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E5F3752202FF3000BAD678 /* AppDelegate.m */; };
+		80E5F3822202FF3000BAD678 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80E5F3802202FF3000BAD678 /* Main.storyboard */; };
+		80E5F3842202FF3000BAD678 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80E5F3832202FF3000BAD678 /* Assets.xcassets */; };
+		80E5F3872202FF3000BAD678 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80E5F3852202FF3000BAD678 /* LaunchScreen.storyboard */; };
+		80E5F38A2202FF3000BAD678 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E5F3892202FF3000BAD678 /* main.m */; };
+		80E5F393220300E000BAD678 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E5F391220300E000BAD678 /* HomeViewController.m */; };
+		80E5F398220306CF00BAD678 /* MenuOption.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E5F397220306CF00BAD678 /* MenuOption.m */; };
+		80E5F39B2203078100BAD678 /* MenuList.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E5F39A2203078100BAD678 /* MenuList.m */; };
+		80E5F39F2203207E00BAD678 /* TemperatureConverterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E5F39D2203207E00BAD678 /* TemperatureConverterController.m */; };
+		80E5F3A02203207E00BAD678 /* TemperatureConverterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80E5F39E2203207E00BAD678 /* TemperatureConverterController.xib */; };
+		80EC136822042D13000550F4 /* CountriesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80EC136622042D13000550F4 /* CountriesTableViewController.m */; };
+		80EC136C22042E14000550F4 /* CountriesList.m in Sources */ = {isa = PBXBuildFile; fileRef = 80EC136B22042E14000550F4 /* CountriesList.m */; };
+		80EC136F220452CF000550F4 /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = 80EC136E220452CF000550F4 /* Country.m */; };
+		9A762642221C1207002E6686 /* CurrencyConvertor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A762641221C1207002E6686 /* CurrencyConvertor.m */; };
+		9A7B07022227F0880098A7F6 /* GetDataNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7B07012227F0880098A7F6 /* GetDataNavigator.m */; };
+		9A7B07082227F1520098A7F6 /* GetCurrencyList.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7B07072227F1520098A7F6 /* GetCurrencyList.m */; };
+		9A7B070B2227F1650098A7F6 /* GetCountryList.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7B070A2227F1650098A7F6 /* GetCountryList.m */; };
+		9A7B070E2227F28F0098A7F6 /* GetData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7B070D2227F28F0098A7F6 /* GetData.m */; };
+		9A7B0711222818940098A7F6 /* GetResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7B0710222818940098A7F6 /* GetResponse.m */; };
+		9A80CE3822314234003D06DF /* CurrencyDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A80CE3722314234003D06DF /* CurrencyDataManager.m */; };
+		9A81C53A222FFBFE00D8F479 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A81C538222FFBFD00D8F479 /* Model.xcdatamodeld */; };
+		9A81C53D2230041200D8F479 /* DataManagerNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A81C53C2230041200D8F479 /* DataManagerNavigator.m */; };
+		9A81C5402230048600D8F479 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A81C53F2230048600D8F479 /* DataManager.m */; };
+		9A81C546223007AB00D8F479 /* CountryDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A81C545223007AB00D8F479 /* CountryDataManager.m */; };
+		9A90462322140F720068E2E3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A90462222140F720068E2E3 /* SystemConfiguration.framework */; };
+		9A904626221416C80068E2E3 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A904625221416C80068E2E3 /* Reachability.m */; };
+		9A90462C22142CA70068E2E3 /* TestConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A90462B22142CA70068E2E3 /* TestConnection.m */; };
+		9AA3C78A221FEAB9002262BE /* Currency.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA3C789221FEAB9002262BE /* Currency.m */; };
+		9ADA5B972216C49B009C9B02 /* CountryDetailsScrollController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADA5B962216C49B009C9B02 /* CountryDetailsScrollController.m */; };
+		FA4E9A7CBA69339B4F3EA9B6 /* libPods-Table-View-Project.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B94FD22913E7A49F894AC7 /* libPods-Table-View-Project.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		804D286D22082FA000848D7D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				804D286F22082FB300848D7D /* CocoaLumberjack.framework in Embed Frameworks */,
+				804D286C22082FA000848D7D /* SVGKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0DC374DF663EAF1FAD3F4A15 /* Pods-Table-View-Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Table-View-Project.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Table-View-Project/Pods-Table-View-Project.debug.xcconfig"; sourceTree = "<group>"; };
+		21B94FD22913E7A49F894AC7 /* libPods-Table-View-Project.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Table-View-Project.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		72703F290DDC285B9679B3E7 /* Pods-Table-View-Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Table-View-Project.release.xcconfig"; path = "Pods/Target Support Files/Pods-Table-View-Project/Pods-Table-View-Project.release.xcconfig"; sourceTree = "<group>"; };
+		804D285422082A5900848D7D /* SVGKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SVGKit.framework; sourceTree = "<group>"; };
+		804D285D22082F6B00848D7D /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		804D285E22082F6D00848D7D /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CocoaLumberjack.framework; sourceTree = "<group>"; };
+		804D285F22082F6D00848D7D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		804D286022082F6D00848D7D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		804D286122082F6D00848D7D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		804D286222082F6E00848D7D /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		804D286322082F6E00848D7D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		804D28702208377700848D7D /* CurrencyList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurrencyList.h; sourceTree = "<group>"; };
+		804D28712208377700848D7D /* CurrencyList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurrencyList.m; sourceTree = "<group>"; };
+		804D287D2208537000848D7D /* ForexController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForexController.h; sourceTree = "<group>"; };
+		804D287E2208537000848D7D /* ForexController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForexController.m; sourceTree = "<group>"; };
+		804D287F2208537000848D7D /* ForexController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForexController.xib; sourceTree = "<group>"; };
+		804E7D142212FE510007C7ED /* info.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = info.m; sourceTree = "<group>"; };
+		80D219FC2209BD2D00108172 /* CountryTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountryTableViewCell.h; sourceTree = "<group>"; };
+		80D219FD2209BD2D00108172 /* CountryTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountryTableViewCell.m; sourceTree = "<group>"; };
+		80D21A022209CEAB00108172 /* ImageUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageUtil.h; sourceTree = "<group>"; };
+		80D21A032209CEAB00108172 /* ImageUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageUtil.m; sourceTree = "<group>"; };
+		80E5F3712202FF3000BAD678 /* Table-View-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Table-View-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80E5F3742202FF3000BAD678 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		80E5F3752202FF3000BAD678 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		80E5F3812202FF3000BAD678 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		80E5F3832202FF3000BAD678 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		80E5F3862202FF3000BAD678 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		80E5F3882202FF3000BAD678 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80E5F3892202FF3000BAD678 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		80E5F390220300E000BAD678 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		80E5F391220300E000BAD678 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		80E5F396220306CF00BAD678 /* MenuOption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuOption.h; sourceTree = "<group>"; };
+		80E5F397220306CF00BAD678 /* MenuOption.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuOption.m; sourceTree = "<group>"; };
+		80E5F3992203078100BAD678 /* MenuList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuList.h; sourceTree = "<group>"; };
+		80E5F39A2203078100BAD678 /* MenuList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuList.m; sourceTree = "<group>"; };
+		80E5F39C2203207E00BAD678 /* TemperatureConverterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TemperatureConverterController.h; sourceTree = "<group>"; };
+		80E5F39D2203207E00BAD678 /* TemperatureConverterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TemperatureConverterController.m; sourceTree = "<group>"; };
+		80E5F39E2203207E00BAD678 /* TemperatureConverterController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TemperatureConverterController.xib; sourceTree = "<group>"; };
+		80EC136522042D13000550F4 /* CountriesTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountriesTableViewController.h; sourceTree = "<group>"; };
+		80EC136622042D13000550F4 /* CountriesTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountriesTableViewController.m; sourceTree = "<group>"; };
+		80EC136A22042E14000550F4 /* CountriesList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountriesList.h; sourceTree = "<group>"; };
+		80EC136B22042E14000550F4 /* CountriesList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountriesList.m; sourceTree = "<group>"; };
+		80EC136D220452CF000550F4 /* Country.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Country.h; sourceTree = "<group>"; };
+		80EC136E220452CF000550F4 /* Country.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Country.m; sourceTree = "<group>"; };
+		9A762640221C1207002E6686 /* CurrencyConvertor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurrencyConvertor.h; sourceTree = "<group>"; };
+		9A762641221C1207002E6686 /* CurrencyConvertor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurrencyConvertor.m; sourceTree = "<group>"; };
+		9A7B07002227F0880098A7F6 /* GetDataNavigator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetDataNavigator.h; sourceTree = "<group>"; };
+		9A7B07012227F0880098A7F6 /* GetDataNavigator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetDataNavigator.m; sourceTree = "<group>"; };
+		9A7B07062227F1520098A7F6 /* GetCurrencyList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetCurrencyList.h; sourceTree = "<group>"; };
+		9A7B07072227F1520098A7F6 /* GetCurrencyList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetCurrencyList.m; sourceTree = "<group>"; };
+		9A7B07092227F1650098A7F6 /* GetCountryList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetCountryList.h; sourceTree = "<group>"; };
+		9A7B070A2227F1650098A7F6 /* GetCountryList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetCountryList.m; sourceTree = "<group>"; };
+		9A7B070C2227F28F0098A7F6 /* GetData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetData.h; sourceTree = "<group>"; };
+		9A7B070D2227F28F0098A7F6 /* GetData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetData.m; sourceTree = "<group>"; };
+		9A7B070F222818940098A7F6 /* GetResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetResponse.h; sourceTree = "<group>"; };
+		9A7B0710222818940098A7F6 /* GetResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetResponse.m; sourceTree = "<group>"; };
+		9A80CE3622314234003D06DF /* CurrencyDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurrencyDataManager.h; sourceTree = "<group>"; };
+		9A80CE3722314234003D06DF /* CurrencyDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurrencyDataManager.m; sourceTree = "<group>"; };
+		9A81C539222FFBFD00D8F479 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		9A81C53B2230041200D8F479 /* DataManagerNavigator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManagerNavigator.h; sourceTree = "<group>"; };
+		9A81C53C2230041200D8F479 /* DataManagerNavigator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManagerNavigator.m; sourceTree = "<group>"; };
+		9A81C53E2230048600D8F479 /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		9A81C53F2230048600D8F479 /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		9A81C544223007AB00D8F479 /* CountryDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountryDataManager.h; sourceTree = "<group>"; };
+		9A81C545223007AB00D8F479 /* CountryDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountryDataManager.m; sourceTree = "<group>"; };
+		9A90462222140F720068E2E3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9A904624221416C80068E2E3 /* ReachabilityR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReachabilityR.h; sourceTree = "<group>"; };
+		9A904625221416C80068E2E3 /* Reachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		9A90462A22142CA70068E2E3 /* TestConnection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestConnection.h; sourceTree = "<group>"; };
+		9A90462B22142CA70068E2E3 /* TestConnection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestConnection.m; sourceTree = "<group>"; };
+		9AA3C788221FEAB9002262BE /* Currency.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Currency.h; sourceTree = "<group>"; };
+		9AA3C789221FEAB9002262BE /* Currency.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Currency.m; sourceTree = "<group>"; };
+		9ADA5B952216C49B009C9B02 /* CountryDetailsScrollController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountryDetailsScrollController.h; sourceTree = "<group>"; };
+		9ADA5B962216C49B009C9B02 /* CountryDetailsScrollController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountryDetailsScrollController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80E5F36E2202FF3000BAD678 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A90462322140F720068E2E3 /* SystemConfiguration.framework in Frameworks */,
+				804D286B22082FA000848D7D /* SVGKit.framework in Frameworks */,
+				804D286722082F6E00848D7D /* QuartzCore.framework in Frameworks */,
+				804D286E22082FB300848D7D /* CocoaLumberjack.framework in Frameworks */,
+				804D286A22082F6E00848D7D /* UIKit.framework in Frameworks */,
+				804D286922082F6E00848D7D /* libxml2.dylib in Frameworks */,
+				804D286822082F6E00848D7D /* Foundation.framework in Frameworks */,
+				804D286622082F6E00848D7D /* CoreGraphics.framework in Frameworks */,
+				804D286422082F6E00848D7D /* CoreText.framework in Frameworks */,
+				FA4E9A7CBA69339B4F3EA9B6 /* libPods-Table-View-Project.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		804D285922082D1F00848D7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A90462222140F720068E2E3 /* SystemConfiguration.framework */,
+				804D285E22082F6D00848D7D /* CocoaLumberjack.framework */,
+				804D285F22082F6D00848D7D /* CoreGraphics.framework */,
+				804D285D22082F6B00848D7D /* CoreText.framework */,
+				804D286122082F6D00848D7D /* Foundation.framework */,
+				804D286222082F6E00848D7D /* libxml2.dylib */,
+				804D286022082F6D00848D7D /* QuartzCore.framework */,
+				804D286322082F6E00848D7D /* UIKit.framework */,
+				804D285422082A5900848D7D /* SVGKit.framework */,
+				21B94FD22913E7A49F894AC7 /* libPods-Table-View-Project.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		80E5F3682202FF3000BAD678 = {
+			isa = PBXGroup;
+			children = (
+				80E5F3732202FF3000BAD678 /* Table-View-Project */,
+				80E5F3722202FF3000BAD678 /* Products */,
+				804D285922082D1F00848D7D /* Frameworks */,
+				BD53EA9DD40ABFF974F7EE24 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		80E5F3722202FF3000BAD678 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80E5F3712202FF3000BAD678 /* Table-View-Project.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80E5F3732202FF3000BAD678 /* Table-View-Project */ = {
+			isa = PBXGroup;
+			children = (
+				80E5F3952203068F00BAD678 /* Models */,
+				80E5F3742202FF3000BAD678 /* AppDelegate.h */,
+				80E5F3752202FF3000BAD678 /* AppDelegate.m */,
+				80D219FC2209BD2D00108172 /* CountryTableViewCell.h */,
+				80D219FD2209BD2D00108172 /* CountryTableViewCell.m */,
+				80D21A022209CEAB00108172 /* ImageUtil.h */,
+				80D21A032209CEAB00108172 /* ImageUtil.m */,
+				80E5F3802202FF3000BAD678 /* Main.storyboard */,
+				80E5F3832202FF3000BAD678 /* Assets.xcassets */,
+				80E5F3852202FF3000BAD678 /* LaunchScreen.storyboard */,
+				80E5F3882202FF3000BAD678 /* Info.plist */,
+				80E5F3892202FF3000BAD678 /* main.m */,
+				80E5F390220300E000BAD678 /* HomeViewController.h */,
+				80E5F391220300E000BAD678 /* HomeViewController.m */,
+				80E5F39C2203207E00BAD678 /* TemperatureConverterController.h */,
+				80E5F39D2203207E00BAD678 /* TemperatureConverterController.m */,
+				80E5F39E2203207E00BAD678 /* TemperatureConverterController.xib */,
+				80EC136522042D13000550F4 /* CountriesTableViewController.h */,
+				80EC136622042D13000550F4 /* CountriesTableViewController.m */,
+				804D287D2208537000848D7D /* ForexController.h */,
+				804D287E2208537000848D7D /* ForexController.m */,
+				804D287F2208537000848D7D /* ForexController.xib */,
+				804E7D142212FE510007C7ED /* info.m */,
+				9A904624221416C80068E2E3 /* ReachabilityR.h */,
+				9A904625221416C80068E2E3 /* Reachability.m */,
+				9A90462A22142CA70068E2E3 /* TestConnection.h */,
+				9A90462B22142CA70068E2E3 /* TestConnection.m */,
+				9ADA5B952216C49B009C9B02 /* CountryDetailsScrollController.h */,
+				9ADA5B962216C49B009C9B02 /* CountryDetailsScrollController.m */,
+				9A7B07002227F0880098A7F6 /* GetDataNavigator.h */,
+				9A7B07012227F0880098A7F6 /* GetDataNavigator.m */,
+				9A7B07062227F1520098A7F6 /* GetCurrencyList.h */,
+				9A7B07072227F1520098A7F6 /* GetCurrencyList.m */,
+				9A7B07092227F1650098A7F6 /* GetCountryList.h */,
+				9A7B070A2227F1650098A7F6 /* GetCountryList.m */,
+				9A7B070C2227F28F0098A7F6 /* GetData.h */,
+				9A7B070D2227F28F0098A7F6 /* GetData.m */,
+				9A7B070F222818940098A7F6 /* GetResponse.h */,
+				9A7B0710222818940098A7F6 /* GetResponse.m */,
+				9A81C538222FFBFD00D8F479 /* Model.xcdatamodeld */,
+				9A81C53B2230041200D8F479 /* DataManagerNavigator.h */,
+				9A81C53C2230041200D8F479 /* DataManagerNavigator.m */,
+				9A81C53E2230048600D8F479 /* DataManager.h */,
+				9A81C53F2230048600D8F479 /* DataManager.m */,
+				9A81C544223007AB00D8F479 /* CountryDataManager.h */,
+				9A81C545223007AB00D8F479 /* CountryDataManager.m */,
+				9A80CE3622314234003D06DF /* CurrencyDataManager.h */,
+				9A80CE3722314234003D06DF /* CurrencyDataManager.m */,
+			);
+			path = "Table-View-Project";
+			sourceTree = "<group>";
+		};
+		80E5F3952203068F00BAD678 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				80E5F396220306CF00BAD678 /* MenuOption.h */,
+				80E5F397220306CF00BAD678 /* MenuOption.m */,
+				80E5F3992203078100BAD678 /* MenuList.h */,
+				80E5F39A2203078100BAD678 /* MenuList.m */,
+				80EC136A22042E14000550F4 /* CountriesList.h */,
+				80EC136B22042E14000550F4 /* CountriesList.m */,
+				80EC136D220452CF000550F4 /* Country.h */,
+				80EC136E220452CF000550F4 /* Country.m */,
+				804D28702208377700848D7D /* CurrencyList.h */,
+				804D28712208377700848D7D /* CurrencyList.m */,
+				9A762640221C1207002E6686 /* CurrencyConvertor.h */,
+				9A762641221C1207002E6686 /* CurrencyConvertor.m */,
+				9AA3C788221FEAB9002262BE /* Currency.h */,
+				9AA3C789221FEAB9002262BE /* Currency.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		BD53EA9DD40ABFF974F7EE24 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0DC374DF663EAF1FAD3F4A15 /* Pods-Table-View-Project.debug.xcconfig */,
+				72703F290DDC285B9679B3E7 /* Pods-Table-View-Project.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80E5F3702202FF3000BAD678 /* Table-View-Project */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80E5F38D2202FF3000BAD678 /* Build configuration list for PBXNativeTarget "Table-View-Project" */;
+			buildPhases = (
+				80DD2958228B8DC2E22E51DE /* [CP] Check Pods Manifest.lock */,
+				80E5F36D2202FF3000BAD678 /* Sources */,
+				80E5F36E2202FF3000BAD678 /* Frameworks */,
+				80E5F36F2202FF3000BAD678 /* Resources */,
+				804D286D22082FA000848D7D /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Table-View-Project";
+			productName = "Table-View-Project";
+			productReference = 80E5F3712202FF3000BAD678 /* Table-View-Project.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80E5F3692202FF3000BAD678 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Gorjan Buzharovski";
+				TargetAttributes = {
+					80E5F3702202FF3000BAD678 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 80E5F36C2202FF3000BAD678 /* Build configuration list for PBXProject "Table-View-Project" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 80E5F3682202FF3000BAD678;
+			productRefGroup = 80E5F3722202FF3000BAD678 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80E5F3702202FF3000BAD678 /* Table-View-Project */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80E5F36F2202FF3000BAD678 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				804D28812208537000848D7D /* ForexController.xib in Resources */,
+				80E5F3872202FF3000BAD678 /* LaunchScreen.storyboard in Resources */,
+				80E5F3A02203207E00BAD678 /* TemperatureConverterController.xib in Resources */,
+				80E5F3842202FF3000BAD678 /* Assets.xcassets in Resources */,
+				80E5F3822202FF3000BAD678 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		80DD2958228B8DC2E22E51DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Table-View-Project-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80E5F36D2202FF3000BAD678 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				804D28722208377700848D7D /* CurrencyList.m in Sources */,
+				9A80CE3822314234003D06DF /* CurrencyDataManager.m in Sources */,
+				80EC136C22042E14000550F4 /* CountriesList.m in Sources */,
+				80E5F39F2203207E00BAD678 /* TemperatureConverterController.m in Sources */,
+				9A90462C22142CA70068E2E3 /* TestConnection.m in Sources */,
+				80E5F38A2202FF3000BAD678 /* main.m in Sources */,
+				9A7B070E2227F28F0098A7F6 /* GetData.m in Sources */,
+				80EC136F220452CF000550F4 /* Country.m in Sources */,
+				804E7D152212FE510007C7ED /* info.m in Sources */,
+				9A81C546223007AB00D8F479 /* CountryDataManager.m in Sources */,
+				80D219FE2209BD2D00108172 /* CountryTableViewCell.m in Sources */,
+				804D28802208537000848D7D /* ForexController.m in Sources */,
+				9ADA5B972216C49B009C9B02 /* CountryDetailsScrollController.m in Sources */,
+				80EC136822042D13000550F4 /* CountriesTableViewController.m in Sources */,
+				9A762642221C1207002E6686 /* CurrencyConvertor.m in Sources */,
+				9A904626221416C80068E2E3 /* Reachability.m in Sources */,
+				80E5F3762202FF3000BAD678 /* AppDelegate.m in Sources */,
+				9A7B0711222818940098A7F6 /* GetResponse.m in Sources */,
+				9A7B07082227F1520098A7F6 /* GetCurrencyList.m in Sources */,
+				9A7B07022227F0880098A7F6 /* GetDataNavigator.m in Sources */,
+				80E5F393220300E000BAD678 /* HomeViewController.m in Sources */,
+				9AA3C78A221FEAB9002262BE /* Currency.m in Sources */,
+				80E5F39B2203078100BAD678 /* MenuList.m in Sources */,
+				9A81C53D2230041200D8F479 /* DataManagerNavigator.m in Sources */,
+				9A7B070B2227F1650098A7F6 /* GetCountryList.m in Sources */,
+				9A81C53A222FFBFE00D8F479 /* Model.xcdatamodeld in Sources */,
+				80D21A042209CEAB00108172 /* ImageUtil.m in Sources */,
+				9A81C5402230048600D8F479 /* DataManager.m in Sources */,
+				80E5F398220306CF00BAD678 /* MenuOption.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		80E5F3802202FF3000BAD678 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80E5F3812202FF3000BAD678 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		80E5F3852202FF3000BAD678 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80E5F3862202FF3000BAD678 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		80E5F38B2202FF3000BAD678 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = gorjan.Devsy;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		80E5F38C2202FF3000BAD678 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = gorjan.Devsy;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80E5F38E2202FF3000BAD678 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DC374DF663EAF1FAD3F4A15 /* Pods-Table-View-Project.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = gorjan.devsy;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Table-View-Project",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Table-View-Project/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Devsy.Gorjan.Table-View-Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		80E5F38F2202FF3000BAD678 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72703F290DDC285B9679B3E7 /* Pods-Table-View-Project.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = gorjan.devsy;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Table-View-Project",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Table-View-Project/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Devsy.Gorjan.Table-View-Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80E5F36C2202FF3000BAD678 /* Build configuration list for PBXProject "Table-View-Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80E5F38B2202FF3000BAD678 /* Debug */,
+				80E5F38C2202FF3000BAD678 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80E5F38D2202FF3000BAD678 /* Build configuration list for PBXNativeTarget "Table-View-Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80E5F38E2202FF3000BAD678 /* Debug */,
+				80E5F38F2202FF3000BAD678 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9A81C538222FFBFD00D8F479 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9A81C539222FFBFD00D8F479 /* Model.xcdatamodel */,
+			);
+			currentVersion = 9A81C539222FFBFD00D8F479 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 80E5F3692202FF3000BAD678 /* Project object */;
+}
